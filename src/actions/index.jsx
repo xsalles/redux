@@ -1,9 +1,11 @@
-export const addTask = (text) => ({
-    type: 'add_task',
-    payload: text
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT;'
+
+export const login = (user) => ({
+    type: LOGIN,
+    payload: user
 })
 
-export const toggleTask = (id) => ({
-    type: 'toggle_task',
-    payload: id
-})
+export const logout = () => ({
+    type: LOGOUT
+}) 
